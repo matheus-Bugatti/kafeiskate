@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="kā fēi Site de vendas de skates e acessórios">
+    <meta name="title" content="kā fēi - Vendas de Skates e acessórios">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="imgs/logomini.svg" type="image/x-icon">
+    <title>kāfēi</title>
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Extra+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&family=Staatliches&family=Stalinist+One&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="header active">
+        <div class="container">
+            <a href="#" class="logo-link">
+                <img src="imgs/logoext.svg" alt="Logo Alta">
+            </a>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Home</a>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#sobre" class="navbar-link">Sobre</a>
+                    </li>
+                    <li class="dropdown-item">
+                        <div class="navbar-link dropdown-toggle" data-dropdown-toggle>
+                            Loja <ion-icon name="chevron-down-outline"></ion-icon>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Skates Prontos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Boards e Lixas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Rolamentos e Rodas
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-link">
+                                    Acessórios e Outros
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="navbar-item">
+                        <a href="#" class="navbar-link">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <button class="search-btn" id="searchToggle" aria-label="Buscar">
+                <ion-icon name="search" style="color: white;"></ion-icon>
+            </button>
+
+            <div class="search-overlay" id="searchOverlay">
+                <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
+                    <ion-icon name="close-outline"></ion-icon>
+                </button>
+
+                <div class="search-container">
+                    <input type="text" placeholder="O que você está procurando?" class="search-input" autofocus />
+                </div>
+            </div>
+
+            <a href="#" class="btn">Login</a>
+            <button class="nav-toggle-btn" aria-label="menu mobile">
+                <ion-icon name="menu-outline" fill="white"></ion-icon>
+            </button>
+        </div>
+    </header>
+
+    <section class="banner">
+        <video autoplay muted loop>
+            <source src="assets/video/video.mp4">
+        </video>
+    </section>
+
+    <!--Galeria De Imagem-->
+    <section class="section gallery" id="sobre">
+        <div class="container-galeria">
+            <p class="section-subtitle text-center"> Nosso Trabalho</p>
+            <h2 class="h2 text-center"> Confira os Nossos Trabalhos</h2>
+        </div>
+
+        <div class="galeria">
+            <img src="imgs/img4.jpg" alt="foto1">
+            <img src="imgs/img3.jpg" alt="foto2">
+            <img src="imgs/img2.jpg" alt="foto3">
+            <img src="imgs/img1.jpg" alt="foto4">
+        </div>
+
+        <div class="botao-ver-mais">
+            <a href="#" class="btn-ver-mais">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+        </div>
+
+        <!--LightBox-->
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="imagem ampliada" id="lightbox-img">
+        </div>
+    </section>
+    <section class="section service" aria-label="service">
+        <div class="container-serv">
+            <p class="section subtitle text-center">Nossos Serviços</p>
+            <h2 class="h2 section-title text-center">O que oferecemos</h2>
+            <ul class="service-list">
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" class="w-100" class="imgCserv">
+                        </div>
+
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Boards</h3>
+                            <hr class="hr">
+                            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam unde
+                                veniam, distinctio recusandae totam.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" class="w-100" class="imgCserv">
+                        </div>
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Rolamentos</h3>
+                            <hr class="hr">
+                            <p class="card-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam unde
+                                veniam, distinctio recusandae totam.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" lang="w-100" class="imgCserv">
+                        </div>
+
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Rodas</h3>
+                            <hr class="hr">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Reiciendis reprehenderit ut
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="service-banner">
+                    <figure>
+                        <img src="imgs/playlists.svg" alt="" class="w-100">
+                    </figure>
+                </li>
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" lang="w-100" class="imgCserv">
+                        </div>
+
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Trucks</h3>
+                            <hr class="hr">
+
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Reiciendis reprehenderit ut
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" lang="w-100" class="imgCserv">
+                        </div>
+
+
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Acessórios</h3>
+                            <hr class="hr">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Reiciendis reprehenderit ut
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="imgs/lapis-fill.svg" alt="" lang="w-100" class="imgCserv">
+                        </div>
+
+
+                        <div class="card-inertext">
+                            <h3 class="h3 card-title">Skates Prontos</h3>
+                            <hr class="hr">
+                            <p class="card-text">
+                                Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit. Reiciendis reprehenderit ut
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+
+    <section class="container-login">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Usuário</label>
+                        <img src="imgs/perfil.svg" alt="" class="img-input">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Senha</label>
+                        <img src="imgs/lock.svg" alt="" class="img-input">
+                    </div>
+
+                    <button type="submit" class="btn2 btn-login">Entrar</button>
+                    <div class="logreg-link">
+                        <p>
+                            Não possui uma conta?
+                            <a href="#" class="register-link">Clique Aqui!</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="assets/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
