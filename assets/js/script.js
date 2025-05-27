@@ -56,7 +56,7 @@ lightbox.addEventListener('click', () => {
 
 
 const openLoginBtn = document.getElementById('openLogin')
-const containerLogin = document.querySelector('container-login')
+const containerLogin = document.querySelector('.container-login')
 
 openLoginBtn.addEventListener('click', () => {
     containerLogin.classList.add('active')
@@ -73,3 +73,12 @@ document.addEventListener('keydown', (e) => {
         containerLogin.classList.remove('active')
     }
 })
+
+const wrapper = document.querySelector('.wrapper');
+const registerLink = document.querySelector('.register-link');
+const loginLink = document.querySelector('.login-link');
+
+registerLink.onclick = (e) => {
+    e.preventDefault();
+    wrapper.classList.add('active');
+}
