@@ -328,7 +328,7 @@ body {
 
 .search-overlay {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -349,18 +349,21 @@ body {
 
 .search-input {
   width: 100%;
-  background-color: #1a1a1a;
+  background-color: var(--bogo-color);
   padding: 1.2rem 1.2rem;
   font-size: 1.4rem;
   border: none;
-  border-radius: 8px;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 20px;
   outline: none;
   color: #fff;
   box-shadow: 0 0 10px var();
 }
 
 .search-input::placeholder {
-  color: #bbb;
+  color: var(--bg-color);
 }
 
 .close-btn {
@@ -546,6 +549,19 @@ body {
   background-color: #1a1a1a3a;
   justify-content: center;
   align-items: center;
+  animation: zoomIn 0.4s ease forwards;
+}
+
+.lightbox.show img {
+  display: block;
+  position: relative;
+  width: auto;
+  height: 80vh;
+  max-width: 90vw;
+  margin: auto;
+  top: unset;
+  left: unset;
+  background: none;
   animation: zoomIn 0.4s ease forwards;
 }
 

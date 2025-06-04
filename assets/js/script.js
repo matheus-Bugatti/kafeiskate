@@ -71,6 +71,7 @@ containerLogin.addEventListener('click', (e) => {
 document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
         containerLogin.classList.remove('active')
+        lightbox.classList.remove('show');
     }
 })
 
